@@ -10,7 +10,11 @@ Automatically send desknet's NEO daily report.
 git clone https://github.com/akihira207/auto-report-dneo.git
 cd auto-report-dneo
 yarn install
+```
 or
+```
+git clone https://github.com/akihira207/auto-report-dneo.git
+cd auto-report-dneo
 npm install
 ```
 ## Usage
