@@ -5,8 +5,7 @@ Automatically send desknet's NEO daily report.
 - node
 - npm or yarn
 
-## Usage
-### Clone software
+## Installation
 ```
 git clone https://github.com/akihira207/auto-report-dneo.git
 cd auto-report-dneo
@@ -14,7 +13,7 @@ yarn install
 or
 npm install
 ```
-
+## Usage
 ### Setting
 Please provide the necessary information for setting.json
 ```json
@@ -28,6 +27,8 @@ Please provide the necessary information for setting.json
     "myNoticeToGroup" : "system group"
 }
 ```
+For myNoticeToGroup, please write the label of the notification destination.
+
 
 Please list the content you would like to report in the daily report in HTML format for report.txt
 ```txt
