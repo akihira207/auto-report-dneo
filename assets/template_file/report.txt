@@ -1,1 +1,0 @@
-<p>Please write your daily report content here in HTML format</p>

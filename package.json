@@ -1,9 +1,0 @@
-{
-  "name": "auto-report-dneo",
-  "version": "1.0.0",
-  "main": "app.js",
-  "license": "MIT",
-  "dependencies": {
-    "puppeteer": "^1.8.0"
-  }
-}
