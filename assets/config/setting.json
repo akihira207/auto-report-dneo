@@ -1,0 +1,9 @@
+{
+    "headlessMode"    : "Please select headless mode with true or false",
+    "url"             : "Please enter the URL of the desk net here",
+    "userId"          : "Please enter your user id",
+    "password"        : "Please enter your password",
+    "myNameIs"        : "Please enter your name",
+    "myDepartmentIs"  : "Please enter your department",
+    "myNoticeToGroup" : "Please enter your notification group"
+}
