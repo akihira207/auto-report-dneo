@@ -201,7 +201,7 @@ App = {
             //
             // Report Confirm Screen.
             //
-            await page.waitFor(1500); // 1.0s failed.
+            await page.waitFor(3000);
             await page.screenshot(
                 {
                     path: 'capture/deploy_your_report.png',
@@ -212,6 +212,9 @@ App = {
             // Send report.
             await page.click('#jcreport-m-confirm-page > div > div.co-actionwrap.bottom > div > input.jcreport-ok');
         
+            // wait...
+            await page.waitFor(1000);
+
             // Finish.
             browser.close();
             
