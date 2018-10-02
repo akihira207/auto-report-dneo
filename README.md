@@ -64,6 +64,11 @@ Capture the confirmation screen before sending the daily report.
 
 It is stored in the capture folder.
 ```
-cd auto-report-dneo/src
-node app.js
+cd auto-report-dneo
+npm run start
+```
+or
+```
+cd auto-report-dneo
+yarn run start
 ```

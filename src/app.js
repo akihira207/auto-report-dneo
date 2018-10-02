@@ -28,8 +28,8 @@ App = {
     initialize: () => {
         let self            = App,
             reportDay       = new Date(),
-            settingFilePath = '../assets/config/setting.json',
-            repotFilePath   = '../assets/template_file/report.txt',
+            settingFilePath = './assets/config/setting.json',
+            repotFilePath   = './assets/template_file/report.txt',
             json            = null;
         
         //
@@ -59,6 +59,7 @@ App = {
         console.log(self.state);
         console.log('');
         console.log('↑↑↑↑↑↑↑↑↑↑Your State End↑↑↑↑↑↑↑↑↑↑');
+        
         return self;
     },
 
