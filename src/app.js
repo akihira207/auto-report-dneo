@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer'),
-      fs        = require('fs');
+      fs        = require('fs'),
+      path      = require('path');
 let App = null;
 
 /**
@@ -12,6 +13,8 @@ App = {
      */
     state: {
         headlessMode    : true,
+        outputPath      : '',
+        fileName        : '',
         url             : '',
         userId          : '',
         password        : '',
@@ -28,8 +31,8 @@ App = {
     initialize: () => {
         let self            = App,
             reportDay       = new Date(),
-            settingFilePath = './assets/config/setting.json',
-            repotFilePath   = './assets/template_file/report.txt',
+            settingFilePath = path.join(__dirname, '../assets/config/setting.json'),
+            repotFilePath   = path.join(__dirname, '../assets/template_file/report.txt'),
             json            = null;
         
         //
@@ -37,6 +40,8 @@ App = {
         //
         json = self.readFile(settingFilePath, 'json');
         self.state.headlessMode    = json.headlessMode === 'true' ? true : false;
+        self.state.outputPath      = 'capture/';
+        self.state.fileName        = 'deploy_your_report.png';
         self.state.url             = json.url;
         self.state.userId          = json.userId;
         self.state.password        = json.password;
@@ -204,7 +209,7 @@ App = {
             await page.waitFor(3000);
             await page.screenshot(
                 {
-                    path: 'capture/deploy_your_report.png',
+                    path: path.join(__dirname, App.state.outputPath + App.state.fileName),
                     fullPage: true
                 }
             );
