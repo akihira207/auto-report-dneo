@@ -7,13 +7,13 @@ Automatically send desknet's NEO daily report.
 
 ## Installation
 ```
-git clone https://github.com/akihira207/auto-report-dneo.git
+git clone https://github.com/na2mene/auto-report-dneo.git
 cd auto-report-dneo
 yarn install
 ```
 or
 ```
-git clone https://github.com/akihira207/auto-report-dneo.git
+git clone https://github.com/na2mene/auto-report-dneo.git
 cd auto-report-dneo
 npm install
 ```
@@ -32,7 +32,7 @@ Please provide the necessary information for setting.json
 }
 ```
 For myNoticeToGroup, please write the label of the notification destination.
-![Setting point of myNoticeToGroup](https://github.com/akihira207/auto-report-dneo/blob/images/noriceToGroup.png "myNoticeToGroup")
+![Setting point of myNoticeToGroup](https://github.com/na2mene/auto-report-dneo/blob/images/noriceToGroup.png "myNoticeToGroup")
 
 Please list the content you would like to report in the daily report in HTML format for report.txt
 ```txt
